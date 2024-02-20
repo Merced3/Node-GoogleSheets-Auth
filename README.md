@@ -32,16 +32,15 @@ Here's an explanation of each environment variable you need to set up in your `.
 - `ACCESS_TOKEN` and `REFRESH_TOKEN`: These tokens are obtained through the OAuth2 flow and are user-specific. They should not be shared or hard-coded in your `.env` file. In a production environment, your application should programmatically obtain these tokens through the OAuth2 flow.
 
 Example `.env` file content:
-
-GOOGLE_CLIENT_ID=your_google_client_id_here
-GOOGLE_CLIENT_SECRET=your_google_client_secret_here
-GOOGLE_REDIRECT_URI=http://localhost:3000/oauth2callback
-SPREADSHEET_ID=your_spreadsheet_id_here
-SHEET_USERS=Sheet1 //Change to whatever the sheet is named
-PORT=3000
-SESSION_SECRET=your_session_secret_here
-ACCESS_TOKEN=get_your_own_token
-REFRESH_TOKEN=get_your_own_token
+- GOOGLE_CLIENT_ID=your_google_client_id_here 
+- GOOGLE_CLIENT_SECRET=your_google_client_secret_here
+- GOOGLE_REDIRECT_URI=http://localhost:3000/oauth2callback
+- SPREADSHEET_ID=your_spreadsheet_id_here
+- SHEET_USERS=Sheet1 //Change to whatever the sheet is named
+- PORT=3000
+- SESSION_SECRET=your_session_secret_here
+- ACCESS_TOKEN=get_your_own_token
+- REFRESH_TOKEN=get_your_own_token
 
 Note: For `ACCESS_TOKEN` and `REFRESH_TOKEN`, it's crucial to follow best practices for OAuth2 authentication and not to hard-code these values. Users will need to go through the OAuth2 authorization flow to obtain their own tokens.
 
@@ -57,31 +56,31 @@ This command starts the server. You can then access the application by going to 
 Here's an overview of the project's directory structure:
 
 Google API Login and Registration
-├── node_modules/
-│ └── [all npm packages]
-├── src/
-│ ├── views/
-│ │ ├── dashboard/
-│ │ │ └── dashboard.ejs
-│ │ ├── homepage/
-│ │ │ └── home.ejs
-│ │ ├── login/
-│ │ │ └── login.ejs
-│ │ ├── register/
-│ │ │ └── register.ejs
-│ │ └── index.ejs
-│ ├── public/
-│ │ ├── css/
-│ │ │ ├── home.css
-│ │ │ ├── login.css
-│ │ │ └── register.css
-│ │ ├── js/
-│ │ │ ├── home.js
-│ │ │ ├── login.js
-│ │ │ └── register.js
-│ └── index.js
-├── .env
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
+- ├── node_modules/
+- │ └── [all npm packages]
+- ├── src/
+- │ ├── views/
+- │ │ ├── dashboard/
+- │ │ │ └── dashboard.ejs
+- │ │ ├── homepage/
+- │ │ │ └── home.ejs
+- │ │ ├── login/
+- │ │ │ └── login.ejs
+- │ │ ├── register/
+- │ │ │ └── register.ejs
+- │ │ └── index.ejs
+- │ ├── public/
+- │ │ ├── css/
+- │ │ │ ├── home.css
+- │ │ │ ├── login.css
+- │ │ │ └── register.css
+- │ │ ├── js/
+- │ │ │ ├── home.js
+- │ │ │ ├── login.js
+- │ │ │ └── register.js
+- │ └── index.js
+- ├── .env
+- ├── .gitignore
+- ├── package-lock.json
+- ├── package.json
+- └── README.md
