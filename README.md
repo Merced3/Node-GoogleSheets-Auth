@@ -55,7 +55,7 @@ This command starts the server. You can then access the application by going to 
 
 Here's an overview of the project's directory structure:
 
-Google API Login and Registration
+- Google API Login and Registration
 - ├── node_modules/
 - │ └── [all npm packages]
 - ├── src/
